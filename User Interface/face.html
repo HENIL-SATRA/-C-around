@@ -1,0 +1,149 @@
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" 
+       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>See Around</title>
+    
+        <style>
+            header{
+            background: url(img/audio1.jpeg) ;
+            background-size: cover;
+            background-color:;
+            
+            background-position: center;
+            min-height:200px;
+            }
+            .section{
+                padding-top : 0vw;
+                padding-bottom:0vw;
+                padding-left:0vw;
+                
+            }
+            .tabs .indicator{
+          background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: orange-lighten-2;
+        }
+    
+            }
+            @media screen and (max-width: 670px){
+                header{
+                    min-height: 500px;
+                }
+    
+            }
+        </style>
+    </head>
+    <body>
+    
+      <!-- navbar -->
+      <header> 
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href=""class="brand-logo black-text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSEE AROUND</a>
+                <a href="" class="sidenav-trigger"data-target="mobile-menu" >
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="start.html "class="large black-text">Home</a></li>
+                    <li><a href="info.html "class="large black-text">Details</a></li>
+                    <li><a href="detection.html "class="large black-text">Image</a></li>
+                    <li><a href="video.html "class="large black-text">Video</a></li>
+                 
+              
+                 </a></li>
+                
+                 <li><a href="https://github.com/HENIL-SATRA"class="tooltipped btn-floating btn-small black"data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                 </a></li>
+                <li><a href="https://www.linkedin.com/in/henil-satra-490669190/"class="tooltipped btn-floating btn-small black"data-tooltip="LinkedIn">
+                         <i class="fab fa-linkedin"></i>
+                </a></li>
+                </ul>
+                 
+                  
+        </nav>
+        <h3 class="black-text center-align">Facial Recognition <br> </h3>
+    </div> <br>
+
+    <div class="row">
+   <div class="col s12 m7 l4 offset-l1">
+     <div class="card">
+       <div class="card-image">
+         <img src="img/Input1.jpg">
+         <span class="card-title">Input Image</span>
+       </div>
+       <div class="card-content">
+         <p>Please turn on camera module. Make sure that the camera is at an optimum height, angle and brightness.</p>
+       </div>
+       <div class="card-action">
+         <a href="#">Note: Input image should be in .jpg format only.</a>
+       </div>
+     </div>
+   </div>
+    
+   <div class="col s12 m7 l4 offset-l2">
+     <div class="card">
+       <div class="card-image">
+         <img src="img/Output1.jpg">
+         <span class="card-title">Output Image</span>
+       </div>
+       <div class="card-content">
+         <p>The person in front of you is {{label}} . Image detection confidence is ## %.</p>
+       </div>
+       <div class="card-action">
+         <a href="#">Output image analysis</a>
+       </div>
+     </div>
+   </div>
+ </div> 
+ 
+ <div class="container center">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="input-field ">
+     <a href="audio2.html" class="black waves-effect waves-light btn large"><i class="material-icons right">music_note</i>listen to audio file</a>
+  </div>
+</div>
+<br><BR>
+      </header>
+      
+        <footer> 
+          <div class="footer-copyright grey darken-4" >
+            <br>
+              <div class="container center-align white-text">&copy; 2020 See Around</div>
+          </div>
+        
+      </footer>
+    
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('select').formSelect();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+            disableWeekends : true
+    
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        });
+      </script>
+    </body>
+    </html>
